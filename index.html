@@ -75,8 +75,8 @@
         <h1>Privacy Policy</h1>
         
         <div class="last-updated">
-            <strong>Last Updated:</strong> September 2025<br>
-            <strong>Effective Date:</strong> September 2025
+            <strong>Last Updated:</strong> January 2025<br>
+            <strong>Effective Date:</strong> January 2025
         </div>
 
         <h2>Introduction</h2>
@@ -89,13 +89,12 @@
             <li><strong>Account Information:</strong> Email address, display name, and full name when you create an account</li>
             <li><strong>Resume Data:</strong> Resume text and extracted profile information (stored securely on our servers)</li>
             <li><strong>User Preferences:</strong> Education level, preferred language, and preferred tone settings</li>
-            <li><strong>Subscription Information:</strong> Payment details and subscription status (processed securely via Stripe)</li>
+            <li><strong>Waitlist Information:</strong> Email addresses for users on the waitlist for future features</li>
         </ul>
 
         <h3>Usage Data</h3>
         <ul>
             <li><strong>Extension Usage:</strong> Authentication state, UI preferences, and language settings</li>
-            <li><strong>Performance Data:</strong> Subscription cache data (expires after 15 minutes)</li>
             <li><strong>Request Tracking:</strong> Monthly usage count for free tier users (20 requests per month limit)</li>
             <li><strong>Technical Data:</strong> Browser type, extension version, and error logs</li>
         </ul>
@@ -137,16 +136,10 @@
                     <td>Until account deletion</td>
                 </tr>
                 <tr>
-                    <td>Subscription Cache</td>
-                    <td>Chrome Storage Local</td>
-                    <td>Medium (Extension context only)</td>
-                    <td>15 minutes (auto-expires)</td>
-                </tr>
-                <tr>
-                    <td>Payment Information</td>
-                    <td>Stripe (PCI compliant)</td>
-                    <td>High (Industry standard)</td>
-                    <td>As required by law</td>
+                    <td>Waitlist Data</td>
+                    <td>Secure Server (Supabase)</td>
+                    <td>High (Encrypted at rest)</td>
+                    <td>Until removed from waitlist</td>
                 </tr>
             </tbody>
         </table>
@@ -156,8 +149,8 @@
             <li><strong>Account Management:</strong> To create and manage your account</li>
             <li><strong>Service Provision:</strong> To provide AI-powered job application assistance</li>
             <li><strong>Cross-Device Sync:</strong> To sync your profile across different devices</li>
-            <li><strong>Performance Optimization:</strong> To cache data for faster response times</li>
             <li><strong>Usage Tracking:</strong> To monitor free tier usage limits (20 requests per month)</li>
+            <li><strong>Waitlist Management:</strong> To notify users when new features become available</li>
             <li><strong>Customer Support:</strong> To provide technical support and resolve issues</li>
         </ul>
 
@@ -188,15 +181,13 @@
         <ul>
             <li><strong>Account Data:</strong> Retained until you delete your account</li>
             <li><strong>User Content:</strong> Resume and profile data can be cleared independently while keeping account</li>
-            <li><strong>Cache Data:</strong> Automatically expires after 15 minutes</li>
             <li><strong>Session Data:</strong> Cleared when you sign out</li>
-            <li><strong>Payment Data:</strong> Retained as required by law and payment processors</li>
+            <li><strong>Waitlist Data:</strong> Retained until you remove yourself from the waitlist</li>
         </ul>
 
         <h2>Third-Party Services</h2>
         <ul>
             <li><strong>Supabase:</strong> Database and authentication services</li>
-            <li><strong>Stripe:</strong> Payment processing (PCI compliant)</li>
             <li><strong>OpenAI:</strong> AI services for job application assistance</li>
             <li><strong>Upstash Redis:</strong> Session management and caching services</li>
         </ul>
