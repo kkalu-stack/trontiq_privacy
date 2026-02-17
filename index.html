@@ -68,15 +68,32 @@
             border-left: 4px solid #28a745;
             margin-top: 30px;
         }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            padding: 10px 18px;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s ease;
+        }
+        .back-link:hover {
+            background: #34495e;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <a href="https://app.trontiq.com" class="back-link">← Back to Trontiq</a>
         <h1>Privacy Policy</h1>
         
         <div class="last-updated">
-            <strong>Last Updated:</strong> September 2025<br>
-            <strong>Effective Date:</strong> September 2025
+            <strong>Last Updated:</strong> February 2026<br>
+            <strong>Effective Date:</strong> February 2026
         </div>
 
         <h2>Introduction</h2>
@@ -89,13 +106,13 @@
             <li><strong>Account Information:</strong> Email address, display name, and full name when you create an account</li>
             <li><strong>Resume Data:</strong> Resume text and extracted profile information (stored securely on our servers)</li>
             <li><strong>User Preferences:</strong> Education level, preferred language, and preferred tone settings</li>
-            <li><strong>Waitlist Information:</strong> Email addresses for users on the waitlist for Trontiq Pro features</li>
+            <li><strong>Payment & Subscription:</strong> Subscription plan (Pro, Mini, Boost), billing status, and subscription identifiers are stored to provide paid features. Payment card details are processed by Stripe; we do not store full card numbers.</li>
         </ul>
 
         <h3>Usage Data</h3>
         <ul>
             <li><strong>Extension Usage:</strong> Authentication state, UI preferences, and language settings</li>
-            <li><strong>Request Tracking:</strong> Monthly usage count for free tier users (20 requests per month limit)</li>
+            <li><strong>Request Tracking:</strong> Monthly usage count for free tier users (10 requests per month limit after trial)</li>
             <li><strong>Technical Data:</strong> Browser type, extension version, and error logs</li>
         </ul>
 
@@ -136,10 +153,10 @@
                     <td>Until account deletion</td>
                 </tr>
                 <tr>
-                    <td>Waitlist Data</td>
-                    <td>Secure Server (Supabase)</td>
+                    <td>Subscription & Billing</td>
+                    <td>Secure Server (Supabase) and Stripe</td>
                     <td>High (Industry standard security)</td>
-                    <td>Until removed from waitlist</td>
+                    <td>Until account deletion or subscription end</td>
                 </tr>
             </tbody>
         </table>
@@ -149,8 +166,8 @@
             <li><strong>Account Management:</strong> To create and manage your account</li>
             <li><strong>Service Provision:</strong> To provide AI-powered job application assistance</li>
             <li><strong>Cross-Device Sync:</strong> To sync your profile across different devices</li>
-            <li><strong>Usage Tracking:</strong> To monitor free tier usage limits (20 requests per month)</li>
-            <li><strong>Waitlist Management:</strong> To notify users when Trontiq Pro features become available</li>
+            <li><strong>Usage Tracking:</strong> To monitor free tier usage limits (7-day trial with 15 requests; then 10 requests per month on free plan)</li>
+            <li><strong>Payments & Subscriptions:</strong> To manage Trontiq Pro, Mini, and Boost purchases and subscription status</li>
             <li><strong>Customer Support:</strong> To provide technical support and resolve issues</li>
         </ul>
 
@@ -182,13 +199,15 @@
             <li><strong>Account Data:</strong> Retained until you delete your account</li>
             <li><strong>User Content:</strong> Resume and profile data can be cleared independently while keeping account</li>
             <li><strong>Session Data:</strong> Cleared when you sign out</li>
-            <li><strong>Waitlist Data:</strong> Retained until you remove yourself from the waitlist</li>
+            <li><strong>Subscription & Billing:</strong> Retained for the duration of your subscription and as required for legal and support purposes</li>
         </ul>
 
         <h2>Third-Party Services</h2>
         <ul>
             <li><strong>Supabase:</strong> Database and authentication services</li>
             <li><strong>OpenAI:</strong> AI services for job application assistance</li>
+            <li><strong>Stripe:</strong> Payment processing for Trontiq Pro, Mini, and Boost (we do not store full payment card details)</li>
+            <li><strong>Resend:</strong> Transactional email (e.g., password reset, account notifications)</li>
             <li><strong>Upstash Redis:</strong> Session management and caching services</li>
         </ul>
 
@@ -216,6 +235,7 @@
         </div>
 
         <p><em>This Privacy Policy is effective as of the date listed above and applies to all users of the Trontiq Chrome extension.</em></p>
+        <p style="margin-top: 2rem;"><a href="https://app.trontiq.com" class="back-link">← Back to Trontiq</a></p>
     </div>
 </body>
 </html>
